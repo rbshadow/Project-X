@@ -38,9 +38,9 @@ cd ~/Research/Tools/
 # Install Dependencies [APPS]   #
 #===============================#
 
-wget https://dl.google.com/go/go1.13.6.linux-amd64.tar.gz 
-tar -C /usr/local -xzf go1.13.6.linux-amd64.tar.gz
-rm go1.13.6.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.14.3.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.14.3.linux-amd64.tar.gz
+rm go1.14.3.linux-amd64.tar.gz
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install ./google-chrome-stable_current_amd64.deb -y
@@ -60,7 +60,7 @@ source ~/.bashrc
 
 # AMASS
 export GO111MODULE=on
-go get -v -u github.com/OWASP/Amass/v3/...
+go get -v github.com/OWASP/Amass/v3/...
 
 # ASSETFINDER
 go get -u github.com/tomnomnom/assetfinder
@@ -145,4 +145,6 @@ cd LinkFinder
 python3 setup.py install
 cd -
 
+cd $HOME
+source .bashrc
 echo 'INSTALLATION IS FINISHED'
