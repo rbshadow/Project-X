@@ -17,6 +17,7 @@ apt install unzip -y
 apt install jq -y
 apt install phantomjs -y
 apt install libpcap-dev -y
+apt install --assume-yes chromium -y
 
 #===========================#
 # Install Dependencies [PIP3#
